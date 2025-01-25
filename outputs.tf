@@ -22,6 +22,11 @@ output "ecs_service_role_arn" {
   description = "ARN of the ECS service role"
 }
 
+output "ecs_task_definition_arn" {
+  value       = aws_ecs_task_definition.systest_task_definition.arn
+  description = "ARN of the ECS task definition"
+}
+
 
 
 output "load_balancer_dns_name" {
